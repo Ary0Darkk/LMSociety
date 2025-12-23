@@ -1,0 +1,17 @@
+2025-12-23
+I started this project to simulate an LLM Society where LLMs can talk to each other and live their by some defined rules.
+I am starting this with getting free apis for different LLMs available.
+Here is non-exhaustive list:
+    1.gemini-2.5-flash
+    2.MiniMax-M2
+    3.gpt-oss-20b
+    4.DeepSeek-R1-Distill-Qwen-32B
+
+Now I have to think how can I simulate conversation between them like we humans do.
+
+I need to learn about how humans talk as it is a part of sociology.
+And I am thinking of building CLI first then move to webpage.
+
+Now first challenge is how are we gonna orchestrate it. Because it can be not like graph or chain.
+As there are different models involved so they will take different amount of time in answering/replying because of their api latency.
+One way is that I use same model but with different personas.
