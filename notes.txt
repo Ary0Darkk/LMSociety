@@ -15,3 +15,10 @@ And I am thinking of building CLI first then move to webpage.
 Now first challenge is how are we gonna orchestrate it. Because it can be not like graph or chain.
 As there are different models involved so they will take different amount of time in answering/replying because of their api latency.
 One way is that I use same model but with different personas.
+
+2025-12-24
+I was learning click then I discovered you can build shells using 'click-shell' library.
+
+I figured out even you define function name, click comprehend underscore to be hyphen, to deal with that you need to pass cmd name inside @click.command(name="your_func_name")
+
+I think I need to buid shell because that can only fullfil my purpose. So I am going to use click-shell.

@@ -5,9 +5,19 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "click>=8.3.1",
+    "click-shell>=2.1",
     "langchain-google-genai>=4.1.2",
     "langchain-huggingface>=1.2.0",
     "langchain-openai>=1.1.6",
     "python-dotenv>=1.2.1",
     "ruff>=0.14.10",
+    "setuptools>=80.9.0",
 ]
+
+[project.scripts]
+lmsociety = "cli_app.cli_shell:lmsociety"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
