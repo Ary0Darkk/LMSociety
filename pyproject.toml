@@ -7,6 +7,7 @@ requires-python = ">=3.13"
 dependencies = [
     "click>=8.3.1",
     "click-shell>=2.1",
+    "dspy>=3.0.4",
     "langchain-google-genai>=4.1.2",
     "langchain-huggingface>=1.2.0",
     "langchain-openai>=1.1.6",
