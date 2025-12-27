@@ -12,3 +12,6 @@ wheels/
 
 # secret varaibles
 .env
+
+# exps
+experiments

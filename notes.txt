@@ -24,3 +24,7 @@ I figured out even you define function name, click comprehend underscore to be h
 I think I need to buid shell because that can only fullfil my purpose. So I am going to use click-shell.
 
 Now I am thinking to learn DSPy and Mem0 integration with it as to build this I need to go deeper.
+
+2025-12-27
+I learnt about signatures, modules.
+And found I need to learn more about dspy and Memory management for them.
