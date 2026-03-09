@@ -37,6 +37,19 @@ deepseek_lm = dspy.LM(
     num_retries=3,
 )
 
+LLM_REGISTRY = {
+    "Gemini": gemini_lm,
+    "MiniMax": minimax_lm,
+    "GPT-OSS": gptoss_lm,
+    "DeepSeek": deepseek_lm,
+}
+
+
+# choose default model
+# dspy.settings.configure(lm=deepseek_lm)
+
+
+# example
 # dspy.settings.configure(lm = gemini_lm)
 # predict = dspy.Predict("question -> answer")
 

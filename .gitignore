@@ -13,6 +13,5 @@ wheels/
 # secret varaibles
 .env
 
-# exps
-experiments
-node_modules
+# db
+src\debate.db
