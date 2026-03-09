@@ -28,3 +28,9 @@ Now I am thinking to learn DSPy and Mem0 integration with it as to build this I 
 2025-12-27
 I learnt about signatures, modules.
 And found I need to learn more about dspy and Memory management for them.
+
+2026-1-5
+Now I am thinking to build a simple webpage.
+
+2026-1-6
+I am learning enough webdev to deal with it.
