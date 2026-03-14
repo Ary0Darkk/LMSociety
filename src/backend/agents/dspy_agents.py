@@ -2,6 +2,8 @@ import dspy
 
 
 class DebateSignature(dspy.Signature):
+    "Talk on given topic under given persona like humans do"
+
     topic = dspy.InputField()
     persona = dspy.InputField()
     context = dspy.InputField()

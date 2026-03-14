@@ -34,3 +34,9 @@ Now I am thinking to build a simple webpage.
 
 2026-1-6
 I am learning enough webdev to deal with it.
+
+2026-3-11
+I am not going much into webdev and just using streamlit for now.
+
+Other consideration include adding vector db and sqlite for structural data storage like metadata.
+Also I am planning to add RLM so that it has large context while speaking and I think this is how Society works!

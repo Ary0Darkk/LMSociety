@@ -50,7 +50,7 @@ LLM_REGISTRY = {
 
 
 # example
-# dspy.settings.configure(lm = gemini_lm)
+# dspy.settings.configure(lm=LLM_REGISTRY["Gemini"])
 # predict = dspy.Predict("question -> answer")
 
 # prediction = predict(question="What is the capital of India?")
