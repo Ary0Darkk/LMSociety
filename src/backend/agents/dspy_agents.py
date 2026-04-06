@@ -2,13 +2,16 @@ import dspy
 
 
 class DebateSignature(dspy.Signature):
-    "Talk on given topic under given persona like humans do"
+    """Generate brief dialogue output."""
 
     topic = dspy.InputField()
     persona = dspy.InputField()
     context = dspy.InputField()
 
-    response = dspy.OutputField()
+    internal_monologue = dspy.OutputField()
+    verbal_response = dspy.OutputField()
+    withheld_info = dspy.OutputField()
+    subtext = dspy.OutputField()
 
 
 class DebateAgent(dspy.Module):
@@ -17,4 +20,14 @@ class DebateAgent(dspy.Module):
         self.generate = dspy.Predict(DebateSignature)
 
     def forward(self, topic, persona, context):
-        return self.generate(topic=topic, persona=persona, context=context)
+        prompt = f"""You are {persona}. On topic: {topic}.
+Previous: {context}
+
+Write very briefly for each:
+
+verbal_response: A short reply.
+internal_monologue: One quick thought.
+withheld_info: One thing you hide.
+subtext: One hint."""
+
+        return self.generate(topic=topic, persona=persona, context=prompt)
