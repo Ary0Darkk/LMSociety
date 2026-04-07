@@ -20,7 +20,8 @@ for i in range(num_agents):
 
 if st.button("Start Debate"):
     r = requests.post(
-        "http://localhost:8000/debate/start", json={"topic": topic, "agents": agents}
+        "http://localhost:8000/debate/start",
+        json={"topic": topic, "agents": agents, "model": model},
     )
 
     st.write(r.json())
